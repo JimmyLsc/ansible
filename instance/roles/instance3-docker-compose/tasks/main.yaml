@@ -5,6 +5,7 @@
   stat:
     path: /docker
   register: directory_stats
+  
 
 - debug:
     msg: "| directory_stats ==> {{ directory_stats }}"
@@ -22,6 +23,12 @@
   template:
     src: "{{workplace_path}}/template/docker-compose-instance3.yaml.j2"
     dest: "/docker/docker-compose.yaml"
+
+- name: copy url file
+  become: yes
+  template: 
+    src: "{{workplace_path}}/template/couchdb_url.py.j2"
+    dest: "/CCC-Assignment2/myapp/couchdb_url.py"
 
 - name: stop docker-compose
   become: yes

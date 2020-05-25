@@ -10,7 +10,11 @@ server {
         index  index.html index.htm;
     }
 
-    location /api {
+    location /api/tweet {
+        proxy_pass  http://{{hostvars[ansible_host]['groups']['instance3'][0]}}:8080;
+    }
+
+    location /api/information {
         proxy_pass  http://{{hostvars[ansible_host]['groups']['instance2'][0]}}:8080;
     }
 
