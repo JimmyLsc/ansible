@@ -49,15 +49,15 @@ volumes:
     device: "/dev/vdb"
     mountpoint: /data
   - vol_name: vol-2
-    vol_size: 60
+    vol_size: 70
     device: "/dev/vdb"
     mountpoint: /data
   - vol_name: vol-3
-    vol_size: 60
+    vol_size: 70
     device: "/dev/vdb"
     mountpoint: /data
   - vol_name: vol-4
-    vol_size: 60
+    vol_size: 40
     device: "/dev/vdb"
     mountpoint: /data
 
