@@ -10,3 +10,7 @@
   loop: '{{ image_result.openstack_image }}'
   when: item.name is defined
 
+- name: Show images
+  debug:
+    msg: "Image name: {{ item.name }}; Image id: {{ item.id }}"
+  loop: '{{ image_facts }}'

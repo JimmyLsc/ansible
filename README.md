@@ -1,8 +1,11 @@
 # Ansible
 
-# Group 8 
 # Team Members:
-Shuocheng Li 961002
+893060 Shuhua Zhang
+935209 Shuai Mou
+962546 Yicheng Jin
+961002 Shuocheng Li
+830789 Ningjing Wang
 
 
 ## How to run
